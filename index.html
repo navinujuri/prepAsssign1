@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+   <script src="index.js" defer></script>
+  
+</head>
+<body>
+
+    
+<input type="text" id="title">
+<input type="text" id="genre">
+<button id="search" onclick="displayResults()">Search</button>
+<select name="filter" id="filter" onchange="displayResultsonselect()" >
+    <option value="">None</option>
+    <option value="title">title</option>
+    <option value="genre">Genre</option>
+    <option value="titleandgenre">Title & Genre</option>
+   
+  </select>
+<ul id="results">
+
+</ul>
+
+    
+</body>
+</html>
